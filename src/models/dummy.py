@@ -27,9 +27,9 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-import tensorflow.contrib.slim as slim
+import tf_slim as slim
 import numpy as np
-  
+
 def inference(images, keep_probability, phase_train=True,  # @UnusedVariable
               bottleneck_layer_size=128, bottleneck_layer_activation=None, weight_decay=0.0, reuse=None):  # @UnusedVariable
     batch_norm_params = {
